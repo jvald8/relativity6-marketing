@@ -1,0 +1,75 @@
+body {
+	font-family: 'lato';
+}
+
+.navbar {
+	min-height: 70px;
+	font-family: 'lato';
+	font-size: 20px;
+}
+
+.navbar-links-right {
+	margin-top: 20px;
+    margin-right: 50px;
+}
+
+.navbar-toggle {
+	margin-top: 20px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color:transparent;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.brand-text {
+	width: 60%;
+	margin-top: 15px;
+}
+
+.hero-image-container {
+	text-align: center;
+	position: relative;
+}
+
+.hero-image {
+	width: 100%;
+}
+
+h2.hero-headline { 
+   position: absolute; 
+   top: 5%;
+   width: 100%;
+   font-size: 5vw;
+   padding: 0px 10px;
+   font-style: normal; 
+   font-weight: 500; 
+   line-height: 1em;
+}
+
+h2.hero-headline-thin {
+	font-weight: 100;
+	top: 15%;  
+}
+
+p.hero-description {
+   position: absolute; 
+   top: 35%; 
+   width: 100%;
+   font-size: 3vw;
+   padding: 0px 20px;
+   font-style: normal; 
+   font-weight: 400; 
+   line-height: 1em;
+}
+
+h4.hero-cta-white {
+	color: white;
+	position: absolute; 
+	top: 80%;
+	padding: 0px 20px;
+}

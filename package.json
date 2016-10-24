@@ -1,0 +1,25 @@
+{
+  "name": "relativity6-marketing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvald8/relativity6-marketing.git"
+  },
+  "author": "Jon Ringvald",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jvald8/relativity6-marketing/issues"
+  },
+  "homepage": "https://github.com/jvald8/relativity6-marketing#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "lodash": "^4.16.4",
+    "pug": "^2.0.0-beta6"
+  }
+}
