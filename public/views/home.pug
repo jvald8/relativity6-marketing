@@ -29,13 +29,46 @@ html(lang="en")
 					img(alt="Brand-Text", class="img-responsive brand-text", src="../assets/relativity6-text-logo.png")
 			div(class="collapse navbar-collapse", id="bs-example-navbar-collapse-1")
 				ul(class="nav navbar-nav pull-right navbar-links-right")
-					li()
-						a(href="#")= "Link"
 					li
-						a(href="#")= "Link"
+						a(href="/features", class="text-uppercase")= "Features"
+					li
+						a(href="/contact-us", class="text-uppercase")= "Contact Us"
+					li
+						a(href="/case-study", class="text-uppercase")= "Case Study"
+					li
+						a(href="/demo", class="text-uppercase")= "Demo"
 	div(class="row hero-image-container")
 		img(class="img-responsive hero-image" src="../assets/hero-image-ocean.png")
 		h2(class="hero-headline text-uppercase")= "reactivate your lost customers"
 		h2(class="hero-headline text-uppercase hero-headline-thin")= "with artificial intelligence"
 		p(class="hero-description text-uppercase")= "Relativity6 uncovers opportunities hidden within your own database. Our automated machine learning platform predicts with above 90% accuracy when and what your customers will purchase."
 		h4(class="hero-headline text-uppercase hero-cta-white")= "reactivate 60% of your lapsed customers"
+		button(type="button", class="hero-btn text-uppercase", href="/demo")= "Schedule your demo"
+	div(class="row testimonial-container")
+		p(class="testimonial-description")= "“Having seen the accuracy of the initial predictions, we’re very excited to use the intelligence we’ll get from this platform to help us better focus our sales team’s efforts going into our busy season (Q4). We’re expecting that the predictions will help us bring in an additional $100-200k of revenue with very minimal effort and give us valuable insight with which to plan our scheduling and purchasing.”"
+		div(class="testimonial-person-image-container")
+			img(class="img img-responsive testimonial-person-image img-circle" src="../assets/chris_patten_magellan.jpg")
+			span(class="testimonial-person-image-name")= "Christopher Patten"
+			br
+			span(class="testimonial-person-image-role")= "Director of Operations, Magellan Jets"
+	div(class="key-features-container")
+		h1(class="key-features-headline text-uppercase")= "Key Features"
+		div(class="key-features-section")
+			div(class="row")
+				div(class="feature-container col-md-6")
+					img(class="feature-icon" src="../assets/re-sync.png")
+					p(class="features text-uppercase")= "Seamless Data Syncing"
+				div(class="feature-container col-md-6")
+					img(class="feature-icon" src="../assets/automated_machine_icon.png")
+					p(class="features text-uppercase")= "Automated Machine Learning"
+				div(class="feature-container col-md-6")
+					img(class="feature-icon" src="../assets/re-channel.png")
+					p(class="features text-uppercase")= "Channel Sensitivity Analysis"
+				div(class="feature-container col-md-6")
+					img(class="feature-icon" src="../assets/re-value.png")
+					p(class="features text-uppercase")= "Purchasing predictions by individual analysis"
+	div(class="row monitors")
+		div(class="monitor-img-container marvin-analyze-monitor col-md-6")
+			img(class="monitor-img marvin-analyze-monitor-img" src="../assets/marvin_analyze_monitor.png")
+		div(class="monitor-img-container marvin-results-dashboard col-md-6")
+			img(class="monitor-img marvin-results-dashboard-img" src="../assets/marvin_results_dashboard_monitor.png")

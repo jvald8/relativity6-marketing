@@ -44,7 +44,7 @@ h2.hero-headline {
    position: absolute; 
    top: 5%;
    width: 100%;
-   font-size: 5vw;
+   font-size: 5.5vw;
    padding: 0px 10px;
    font-style: normal; 
    font-weight: 500; 
@@ -60,7 +60,7 @@ p.hero-description {
    position: absolute; 
    top: 35%; 
    width: 100%;
-   font-size: 3vw;
+   font-size: 3.5vw;
    padding: 0px 20px;
    font-style: normal; 
    font-weight: 400; 
@@ -71,5 +71,80 @@ h4.hero-cta-white {
 	color: white;
 	position: absolute; 
 	top: 80%;
+	font-size: 2.7vw;
 	padding: 0px 20px;
+	width: 100%;
+}
+
+button.hero-btn {
+	position: absolute; 
+	font-size: 2.6vw;
+	color: white;
+	top: 90%;
+	width: 40%;
+	background-color: #d9534f;
+    border-color: #d43f3a;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: block;
+    margin-left: 30%;
+}
+
+.testimonial-container {
+	margin:30px 10px;
+	text-align:center;
+}
+
+.testimonial-description {
+	line-height: 1.5;
+    text-align: left;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-size: 3.2vw;
+    font-weight: 300;
+}
+
+.testimonial-person-image-container {
+	width: 25%;
+	margin-left:37%;
+	font-size: 3vw;
+	line-height:1.1;
+}
+
+.testimonial-person-image-name {
+	font-weight:300;
+}
+
+.key-features-container {
+	text-align: center;
+	padding-top: 10px;
+	background-color: rgba(151, 151, 151, 0.188235);
+}
+
+.key-features-headline {
+	font-size: 48px;
+}
+
+.features {
+	font-size: 28px;
+}
+
+.feature-icon {
+	width: 30%;
+}
+
+.monitors {
+	text-align: center;
+	background-color: rgba(151, 151, 151, 0.188235);
+}
+
+.monitor-img-container {
+	padding: 40px 0px;
+}
+
+.monitor-img {
+	width:95%;
 }
