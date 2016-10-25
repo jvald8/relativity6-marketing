@@ -32,14 +32,19 @@ router.use(function(req, res, next) {
 	next();
 });
 
+app.set('views' ,'./public/views');
+
+app.set('view engine', 'pug');
+
 app.use(express.static('public'));
+
+router.get('/test', function() {
+	alert('something works')
+});
 
 // these are the api, to submit forms with
 app.use('/api', router);
 
-app.set('views' ,'./public/views');
-
-app.set('view engine', 'pug');
 
 app.listen(port);
 console.log(`go to localhost: ${port}`);
