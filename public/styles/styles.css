@@ -31,6 +31,12 @@ body {
 	margin-top: 15px;
 }
 
+@media (max-width: 421px) { 
+	.brand-text {
+		display: none;
+	}
+}
+
 .hero-image-container {
 	text-align: center;
 	position: relative;
