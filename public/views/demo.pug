@@ -24,13 +24,19 @@ html(lang="en")
 					span(class="icon-bar")
 					span(class="icon-bar")
 				a(class="navbar-brand", href="#")
-					img(alt="Brand", class="img-responsive", src="../assets/marvin_logo_small.png")
+					img(alt="Brand-Img", class="img-responsive", src="../assets/marvin_logo_small.png")
+				a(class="navbar-brand", href="#")
+					img(alt="Brand-Text", class="img-responsive brand-text", src="../assets/relativity6-text-logo.png")
 			div(class="collapse navbar-collapse", id="bs-example-navbar-collapse-1")
 				ul(class="nav navbar-nav pull-right navbar-links-right")
-					li()
-						a(href="#")= "Link"
 					li
-						a(href="#")= "Link"
+						a(href="/features", class="text-uppercase")= "Features"
+					li
+						a(href="/contact-us", class="text-uppercase")= "Contact Us"
+					li
+						a(href="/case-study", class="text-uppercase")= "Case Study"
+					li
+						a(href="/demo", class="text-uppercase")= "Demo"
 	form(action="/api/sendForm/", method="POST")
 		label= "Enter your email"
 		br
