@@ -107,6 +107,12 @@ button.hero-btn {
     font-weight: 300;
 }
 
+@media (min-width: @screen-sm-min) { 
+	.testimonial-description {
+		font-size: 5vw;
+	}
+}
+
 .testimonial-person-image-container {
 	width: 25%;
 	margin-left:37%;
