@@ -157,8 +157,9 @@ button.hero-btn {
 
 .mit-logos-container {
 	width: 100%;
+	text-align: center;
 }
 
 .mit-logo {
-	width: 30%;
+	width: 25%;
 }
