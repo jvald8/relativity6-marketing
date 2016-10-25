@@ -33,7 +33,7 @@ body {
 
 @media (max-width: 421px) { 
 	.brand-text {
-		display: none;
+		display: none !important;
 	}
 }
 
