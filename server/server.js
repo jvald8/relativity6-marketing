@@ -38,8 +38,8 @@ app.set('view engine', 'pug');
 
 app.use(express.static('public'));
 
-router.get('/test', function() {
-	alert('something works')
+router.get('/contact-form', function() {
+	
 });
 
 // these are the api, to submit forms with
