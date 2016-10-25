@@ -107,7 +107,7 @@ button.hero-btn {
     font-weight: 300;
 }
 
-@media (min-width: @screen-sm-min) { 
+@media (max-width: 599px) { 
 	.testimonial-description {
 		font-size: 5vw;
 	}
