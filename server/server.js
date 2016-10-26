@@ -20,6 +20,9 @@ var port = process.env.PORT || 8080;
   next();
 });*/
 
+// these are the api, to submit forms with
+app.use('/api', router);
+
 // different views for different reasons
 // home view
 app.get('/', function(req, res, next) {
@@ -30,8 +33,12 @@ app.get('/demo', function(req, res, next) {
 	res.render('demo', {});
 });
 
-app.get('/contact-us', function(req, res, next) {
-	res.render('contact-us', {});
+app.get('/contact', function(req, res, next) {
+	res.render('contact', {});
+});
+
+app.get('/contact-result', function(req, res, next) {
+	res.render('contact-result', {});
 });
 
 router.use(function(req, res, next) {
@@ -45,21 +52,17 @@ app.set('view engine', 'pug');
 
 app.use(express.static('public'));
 
-router.get('/contact-form', function() {
-	
-});
+console.log(process.env)
 
-// these are the api, to submit forms with
-app.use('/api', router);
-
-router.post('/contact', function (req, res) {
+app.post('/contact', function (req, res) {
+	console.log(req.body);
   var mailOpts, smtpTrans;
   //Setup Nodemailer transport, I chose gmail. Create an application-specific password to avoid problems.
   smtpTrans = nodemailer.createTransport('SMTP', {
       service: 'Gmail',
       auth: {
           user: "jvald8@gmail.com",
-          pass: nodemailerPassword
+          pass: process.env.GMAIL_PW
       }
   });
   //Mail options
