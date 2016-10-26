@@ -27,6 +27,10 @@ app.get('/demo', function(req, res, next) {
 	res.render('demo', {});
 });
 
+app.get('/contact-us', function(req, res, next) {
+	res.render('contact-us', {});
+});
+
 router.use(function(req, res, next) {
 	console.log('something is happening');
 	next();
