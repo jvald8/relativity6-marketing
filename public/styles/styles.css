@@ -31,9 +31,18 @@ body {
 	margin-top: 15px;
 }
 
+@media (min-width: 422px) {
+	.small-R6 {
+		display: none !important;
+	}
+}
+
 @media (max-width: 421px) { 
 	.brand-text {
 		display: none !important;
+	}
+	.small-R6 {
+		display: block !important;
 	}
 }
 
