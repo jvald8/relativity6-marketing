@@ -37,6 +37,10 @@ app.get('/contact', function(req, res, next) {
 	res.render('contact', {});
 });
 
+app.get('/case-study', function(req, res, next) {
+	res.render('case-study', {});
+});
+
 app.get('/contact-result', function(req, res, next) {
 	res.render('contact-result', {});
 });
