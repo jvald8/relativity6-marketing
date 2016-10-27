@@ -185,6 +185,15 @@ button.hero-btn {
 	text-align: center;
 }
 
+.contact-form-container > h1 > div > form > fieldset > p {
+	font-size: 26px;
+	text-align: center;
+}
+
+textarea#message {
+	width: 60%;
+}
+
 .footer {
 	position: relative;
     bottom: 0;

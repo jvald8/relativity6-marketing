@@ -23,7 +23,7 @@ html(lang="en")
           span(class="icon-bar")
           span(class="icon-bar")
         a(class="navbar-brand", href="#")
-          img(alt="Brand-Img", class="img-responsive", src="../assets/marvin_logo_small.png")
+          img(alt="Brand-Img", class="img-responsive", src="../assets/marvin_first_bump_gif_small.gif")
         a(class="navbar-brand", href="#")
           img(alt="Brand-Text", class="img-responsive brand-text", src="../assets/relativity6-text-logo-150x36.png")
           img(alt="Brand-Text", class="img-responsive brand-text small-R6", src="../assets/small-R6.png")
@@ -38,8 +38,8 @@ html(lang="en")
           li
             a(href="/demo", class="text-uppercase")= "Demo"
   div(class="contact-form-container")
-    h1= "Contact Form"
-      div.content
+    h1= "Contact Us!"
+      div.content(style="padding-top:10px;")
         form(action='/contact', name='contactus', id='contactus', method='post')
           fieldset
             p
@@ -53,7 +53,7 @@ html(lang="en")
             p
               label(for='message')= "Message:"
               br
-              textarea(name='message', cols='40', rows='10', id='message')
+              textarea(name='message', cols='40', rows='5', id='message')
             p
               input(name='submit', type='submit', value='Send', id='submit')
         
