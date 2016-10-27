@@ -18,8 +18,8 @@ $(function() {
     },
     // Specify validation error messages
     messages: {
-      name: "Please enter your name",
-      email: "Please enter a valid email address"
+      name: " Please enter your name",
+      email: " Please enter a valid email address"
     },
     // Make sure the form is submitted to the destination defined
     // in the "action" attribute of the form when valid
