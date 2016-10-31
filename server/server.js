@@ -32,7 +32,7 @@ app.get('/', function(req, res, next) {
 });
 
 app.get('/demo', function(req, res, next) {
-	res.render('demo', {countries: countries});
+	res.render('demo', {countries: countryNames});
 });
 
 app.get('/contact', function(req, res, next) {
