@@ -38,39 +38,40 @@ html(lang="en")
 					li
 						a(href="/demo", class="text-uppercase")= "Demo"
 	div(class="contact-form-container")
-		h1= "Schedule a Demo Today"
-			div.content(style="padding-top:10px;")
-				form(action='/demo', name='demoform', id='demoform', method='post')
-					fieldset
-						p
-							label(for='firstname')= "First Name:"
-							br
-							input(name='firstname', type='text', value='', id='firstname')
-						p
-							label(for='lastname')= "Last Name:"
-							br
-							input(name='lastname', type='text', value='', id='lastname')
-						p
-							label(for='email')= "Email:"
-							br
-							input(name='email', type='text', value='', id='email')
-						p
-							label(for='phone')= "Phone Number:"
-							br
-							input(name='phone', type='text', value='', id='phone')
-						p
-							label(for='jobtitle')= "Job Title:"
-							br
-							input(name='jobtitle', type='text', value='', id='jobtitle')
-						p
-							label(for='company')= "Company Name:"
-							br
-							input(name='company', type='text', value='', id='company')
-						p
-							label(for='country')= "Country"
-							br
-							select(name="submitted[name_and_address][country]", class="form-select required", id="edit-submitted-name-and-address-country")
-								each val in countries
-									option(value={val}.val)= val
-						p
-							input(name='submit', type='submit', value='Send', id='submit')
+		h1(class="text-uppercase")= "Thanks for your interest!"
+		h4(class="text-uppercase")= "Just kindly fill out the form below and one of our sales representatives will contact you shortly."
+		div.content(style="padding-top:10px;")
+			form(action='/demo', name='demoform', id='demoform', method='post')
+				fieldset
+					p
+						label(for='firstname')= "First Name:"
+						br
+						input(name='firstname', type='text', value='', id='firstname')
+					p
+						label(for='lastname')= "Last Name:"
+						br
+						input(name='lastname', type='text', value='', id='lastname')
+					p
+						label(for='email')= "Email:"
+						br
+						input(name='email', type='text', value='', id='email')
+					p
+						label(for='phone')= "Phone Number:"
+						br
+						input(name='phone', type='text', value='', id='phone')
+					p
+						label(for='jobtitle')= "Job Title:"
+						br
+						input(name='jobtitle', type='text', value='', id='jobtitle')
+					p
+						label(for='company')= "Company Name:"
+						br
+						input(name='company', type='text', value='', id='company')
+					p
+						label(for='country')= "Country"
+						br
+						select(name="submitted[name_and_address][country]", class="form-select required", id="edit-submitted-name-and-address-country")
+							each val in countries
+								option(value={val}.val)= val
+					p
+						input(name='submit', type='submit', value='Send', id='submit')
