@@ -263,12 +263,13 @@ textarea#message {
 @media (max-width: 599px) { 
 	.case-study-sub-headline {
 		font-size: 17px;
+		margin-top: 15%;
 	}
 }
 
 .case-study-rundown-container {
 	position: absolute;
-	margin-top: 20%;
+	margin-top: 23%;
 	margin-left: 6%;
 	z-index: 1;
 	color: white;
@@ -310,6 +311,13 @@ textarea#message {
     -webkit-font-smoothing: subpixel-antialiased;
     font-size: 3.2vw;
     font-weight: 300;
+}
+
+@media (max-width:599px) {
+	.case-study-objective-description {
+	    font-size: 20px;
+	    font-weight: 300;
+	}
 }
 
 .features-red {
