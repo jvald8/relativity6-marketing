@@ -311,3 +311,7 @@ textarea#message {
     font-size: 3.2vw;
     font-weight: 300;
 }
+
+.features-red {
+	color: rgb(255, 40, 0);;
+}

@@ -1,0 +1,78 @@
+<!-- https://github.com/pugjs/pug -->
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		title= "Relativity6"
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", type="text/javascript")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
+		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", crossorigin="anonymous", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", rel="stylesheet")
+		link(href="../styles/styles.css", rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,100italic,200italic,300italic,400italic,500italic,600italic,700italic", type="text/css", rel="stylesheet")
+		link(rel="icon", href="../assets/marvin_logo_small_favicon.png", type="image/png")
+	body
+	nav(class="navbar navbar-default")
+		div(class="container-fluid")
+			div(class="navbar-header")
+				button(type="button", class="navbar-toggle collapsed", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1", aria-expanded="false")
+					span(class="sr-only")= "Toggle navigation"
+					span(class="icon-bar")
+					span(class="icon-bar")
+					span(class="icon-bar")
+				a(class="navbar-brand", href="#")
+					img(alt="Brand-Img", class="img-responsive", src="../assets/marvin_logo_small.png")
+				a(class="navbar-brand", href="#")
+					img(alt="Brand-Text", class="img-responsive brand-text", src="../assets/relativity6-text-logo-150x36.png")
+					img(alt="Brand-Text", class="img-responsive brand-text small-R6", src="../assets/small-R6.png")
+			div(class="collapse navbar-collapse", id="bs-example-navbar-collapse-1")
+				ul(class="nav navbar-nav pull-right navbar-links-right")
+					li
+						a(href="/features", class="text-uppercase")= "Features"
+					li
+						a(href="/contact", class="text-uppercase")= "Contact Us"
+					li
+						a(href="/case-study", class="text-uppercase")= "Case Study"
+					li
+						a(href="/demo", class="text-uppercase")= "Demo"
+	div(class="key-features-container")
+		h1(class="key-features-headline text-uppercase")= "Features"
+		div(class="key-features-section")
+			div(class="row")
+				div(class="feature-container col-md-4")
+					img(class="feature-icon" src="../assets/re-sync.png")
+					p(class="features features-red text-uppercase")= "Re-sync"
+					p(class="feature-description text-uppercase")= "Seamless direct connection between our platform and your database"
+				div(class="feature-container col-md-4")
+					img(class="feature-icon" src="../assets/automated_machine_icon.png")
+					p(class="features features-red text-uppercase")= "Re-Predict"
+					p(class="feature-description text-uppercase")= "Monthly predictions of your highest potential customers with 95% accuracy"
+				div(class="feature-container col-md-4")
+					img(class="feature-icon" src="../assets/re-ltv.png")
+					p(class="features features-red text-uppercase")= "Re-Ltv"
+					p(class="feature-description text-uppercase")= "Precise prediction on the lifetime and profitability of your lapsed customers."
+			div(class="row")
+				div(class="feature-container col-md-4")
+					img(class="feature-icon" src="../assets/re-value.png")
+					p(class="features features-red text-uppercase")= "Re-value"
+					p(class="feature-description text-uppercase")= "Predict how much money is hidden within your customer base."
+				div(class="feature-container col-md-4")
+					img(class="feature-icon" src="../assets/re-channel.png")
+					p(class="features features-red text-uppercase")= "Re-channel"
+					p(class="feature-description text-uppercase")= "Predict each customer's individual sensitivity to each communication channel (Catalogue, email, phone)."
+				div(class="feature-container col-md-4")
+					img(class="feature-icon" src="../assets/re-convert.png")
+					p(class="features features-red text-uppercase")= "Re-convert"
+					p(class="feature-description text-uppercase")= "Convert between 2-5% of your lapsed customers every month."
+	div(class="row testimonial-container")
+		p(class="testimonial-description")= "“The expertise Relativity6 brings to the table has been invaluable in identifying and consequently engaging our unresponsive customers. Their model has been able to predict customers who have at least a 60 percent chance of returning and we've already seen the actual dollar results of these predictions.”"
+		div(class="testimonial-person-image-container")
+			img(class="img img-responsive testimonial-person-image img-circle" src="../assets/ani-boyo-coachup.jpg")
+			span(class="testimonial-person-image-name")= "Ani Boyo"
+			br
+			span(class="testimonial-person-image-role")= "Marketing Analyst, CoachUp"
+	footer(class="footer")
+		div(class="footer-content row")
+			p(class="copyright")= "© 2016 Relativity6, Inc. All rights reserved."
