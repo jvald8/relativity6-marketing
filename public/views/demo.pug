@@ -44,31 +44,31 @@ html(lang="en")
 			form(action='/demo', name='demoform', id='demoform', method='post')
 				fieldset
 					p
-						label(for='firstname')= "First Name:"
+						label(for='firstname')= "*First Name:"
 						br
 						input(name='firstname', type='text', value='', id='firstname')
 					p
-						label(for='lastname')= "Last Name:"
+						label(for='lastname')= "*Last Name:"
 						br
 						input(name='lastname', type='text', value='', id='lastname')
 					p
-						label(for='email')= "Email:"
+						label(for='email')= "*Email:"
 						br
 						input(name='email', type='text', value='', id='email')
 					p
-						label(for='phone')= "Phone Number:"
+						label(for='phone')= "*Phone Number:"
 						br
 						input(name='phone', type='text', value='', id='phone')
 					p
-						label(for='jobtitle')= "Job Title:"
+						label(for='jobtitle')= "*Job Title:"
 						br
 						input(name='jobtitle', type='text', value='', id='jobtitle')
 					p
-						label(for='company')= "Company Name:"
+						label(for='company')= "*Company Name:"
 						br
 						input(name='company', type='text', value='', id='company')
 					p
-						label(for='country')= "Country"
+						label(for='country')= "*Country"
 						br
 						select(name="submitted[name_and_address][country]", class="form-select required", id="edit-submitted-name-and-address-country")
 							each val in countries
