@@ -215,17 +215,26 @@ textarea#message {
 
 .case-study-image {
 	width: 100%;
-	opacity:.75;
+	opacity:.65;
 }
 
 .case-study-headline-container {
 	position: relative;
+	margin-left:10px;
 }
 
 .coachup-logo {
 	position: absolute;
 	z-index: 1;
-	width: 20%;
+	width: 15%;
+	margin-top: 4%;
+    margin-left: 3%;
+}
+
+@media (max-width: 499px) { 
+	.coachup-logo {
+		margin-top: 6%;
+	}
 }
 
 .case-study-headline {
@@ -244,7 +253,7 @@ textarea#message {
     width: 100%;
     font-size: 25px;
     margin-top: 12%;
-    margin-left: 1px;
+    /*margin-left: 1px;*/
     padding: 5%;
 }
 
@@ -256,4 +265,31 @@ textarea#message {
 	.case-study-sub-headline {
 		font-size: 17px;
 	}
+}
+
+.case-study-rundown-container {
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 6%;
+	z-index: 1;
+	color: white;
+	width:50%;
+}
+@media (max-width:599px) {
+	.case-study-rundown-container {
+		text-align: center;
+		width: 99%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+}
+
+.case-study-objective-description {
+	font-size: 20px;
+    font-weight: 200;
+}
+
+.case-study-results-description {
+	font-size: 20px;
+    font-weight: 600;
 }

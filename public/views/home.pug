@@ -38,7 +38,7 @@ html(lang="en")
 					li
 						a(href="/demo", class="text-uppercase")= "Demo"
 	div(class="row hero-image-container")
-		img(class="img-responsive hero-image" src="../assets/hero-image-ocean.png")
+		img(class="img-responsive hero-image", onload="fadeIn(this)", src="https://s3-us-west-1.amazonaws.com/relativity6-marketing/assets/hero-image-ocean.png")
 		h2(class="hero-headline text-uppercase")= "reactivate your lost customers"
 		h2(class="hero-headline text-uppercase hero-headline-thin")= "with artificial intelligence"
 		p(class="hero-description text-uppercase")= "Relativity6 uncovers opportunities hidden within your own database. Our automated machine learning platform predicts with above 90% accuracy when and what your customers will purchase."
@@ -81,3 +81,7 @@ html(lang="en")
 	footer(class="footer")
 		div(class="footer-content row")
 			p(class="copyright")= "© 2016 Relativity6, Inc. All rights reserved."
+	script.
+		window.fadeIn = function(obj) {
+			$(obj).fadeIn(3000);
+		}
