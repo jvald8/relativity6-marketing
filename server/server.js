@@ -12,9 +12,11 @@ var express = require('express'),
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
+var demo = require('./database/demo');
+
 var port = process.env.PORT || 8080;
 
-var countryNames = _.sortBy(_.uniqBy(_.map(countries, 'name')), 'name');
+var countryNames = _.uniqBy(_.map(countries, 'name'));
 
 /*app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -33,6 +35,10 @@ app.get('/', function(req, res, next) {
 
 app.get('/demo', function(req, res, next) {
 	res.render('demo', {countries: countryNames});
+});
+
+app.get('/demo-thank-you', function(req, res, next) {
+	res.render('demo-thank-you', {countries: countryNames});
 });
 
 app.get('/contact', function(req, res, next) {
@@ -61,6 +67,8 @@ app.set('views' ,'./public/views');
 app.set('view engine', 'pug');
 
 app.use(express.static('public'));
+
+app.post('/demo', demo.createDemo)
 
 app.post('/contact', function (req, res) {
 	console.log(req.body);

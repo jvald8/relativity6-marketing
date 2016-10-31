@@ -9,8 +9,19 @@ var pool = mysql.createPool({
 	port: process.env.MYSQL_PORT
 });
 
-exports.createDemo = function(data, cb) {
+exports.createDemo = function(req, res) {
+	var data = req.body;
+
 	pool.getConnection(function(err, connection) {
-		connection.query(`INSERT INTO demos VALUES (null, )`)
+		connection.query(`INSERT INTO demos VALUES (null, '${data.firstname}', '${data.lastname}', '${data.email}', '${data.phone}', '${data.jobtitle}', '${data.company}', '${data.country}')`, function(err, rows, fields) {
+			if(err) throw err;
+
+			console.log(rows);
+
+			connection.release();
+		})
 	})
+
+	// if successful
+	res.render('demo', {message: "You're the best! We'll be in touch soon!", countries: ['US', 'Canada']});
 }
