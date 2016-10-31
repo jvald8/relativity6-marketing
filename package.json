@@ -19,8 +19,10 @@
   "homepage": "https://github.com/jvald8/relativity6-marketing#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "country-data": "0.0.31",
     "express": "^4.14.0",
     "lodash": "^4.16.4",
+    "mysql": "^2.11.1",
     "nodemailer": "^0.7.1",
     "pug": "^2.0.0-beta6"
   }

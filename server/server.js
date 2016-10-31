@@ -5,14 +5,16 @@ var express = require('express'),
 	fs = require('fs'),
 	path = require('path'),
 	_ = require('lodash'),
-	nodemailer = require('nodemailer');
-
-var nodemailerPassword = "jaqiujaxnucwgdmu";
+	nodemailer = require('nodemailer'),
+	countries = require('country-data').countries,
+	_ = require('lodash');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 var port = process.env.PORT || 8080;
+
+var countryNames = _.sortBy(_.uniqBy(_.map(countries, 'name')), 'name');
 
 /*app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -30,7 +32,7 @@ app.get('/', function(req, res, next) {
 });
 
 app.get('/demo', function(req, res, next) {
-	res.render('demo', {});
+	res.render('demo', {countries: countries});
 });
 
 app.get('/contact', function(req, res, next) {
@@ -59,8 +61,6 @@ app.set('views' ,'./public/views');
 app.set('view engine', 'pug');
 
 app.use(express.static('public'));
-
-console.log(process.env)
 
 app.post('/contact', function (req, res) {
 	console.log(req.body);
