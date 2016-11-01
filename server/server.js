@@ -83,8 +83,9 @@ app.post('/contact', function (req, res) {
   });
   //Mail options
   mailOpts = {
-      from: req.body.name + ' &lt;' + req.body.email + '&gt;', //grab form data from the request body object
+      from: req.body.email, //grab form data from the request body object
       to: 'jvald8@gmail.com',
+      cc: req.body.email,
       subject: 'Website contact form',
       text: req.body.message
   };
