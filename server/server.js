@@ -84,7 +84,7 @@ app.post('/contact', function (req, res) {
   //Mail options
   mailOpts = {
       from: req.body.email, //grab form data from the request body object
-      to: 'jvald8@gmail.com',
+      to: 'alan@relativity6.com',
       cc: req.body.email,
       subject: 'Website contact form',
       text: req.body.message
