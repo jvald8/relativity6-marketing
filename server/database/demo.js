@@ -13,7 +13,7 @@ exports.createDemo = function(req, res) {
 	var data = req.body;
 
 	pool.getConnection(function(err, connection) {
-		connection.query(`INSERT INTO demos VALUES (null, '${data.firstname}', '${data.lastname}', '${data.email}', '${data.phone}', '${data.jobtitle}', '${data.company}', '${data.country}')`, function(err, rows, fields) {
+		connection.query(`INSERT INTO demos VALUES (null, ?, ?, ?, ?, ?, ?, ?)`, [data.firstname, data.lastname, data.email, data.phone, data.jobtitle, data.company, data.country],function(err, rows, fields) {
 			if(err) throw err;
 
 			console.log(rows);

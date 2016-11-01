@@ -48,31 +48,31 @@ html(lang="en")
 					p
 						label(for='firstname')= "*First Name:"
 						br
-						input(name='firstname', type='text', value='', id='firstname')
+						input(name='firstname', type='text', value='', id='firstname', required)
 					p
 						label(for='lastname')= "*Last Name:"
 						br
-						input(name='lastname', type='text', value='', id='lastname')
+						input(name='lastname', type='text', value='', id='lastname', required)
 					p
 						label(for='email')= "*Email:"
 						br
-						input(name='email', type='text', value='', id='email')
+						input(name='email', type='email', value='', id='email', required)
 					p
 						label(for='phone')= "*Phone Number:"
 						br
-						input(name='phone', type='text', value='', id='phone')
+						input(name='phone', type='text', value='', id='phone', required)
 					p
 						label(for='jobtitle')= "*Job Title:"
 						br
-						input(name='jobtitle', type='text', value='', id='jobtitle')
+						input(name='jobtitle', type='text', value='', id='jobtitle', required)
 					p
 						label(for='company')= "*Company Name:"
 						br
-						input(name='company', type='text', value='', id='company')
+						input(name='company', type='text', value='', id='company', required)
 					p
 						label(for='country')= "*Country"
 						br
-						select(name="country", class="form-select required", id="edit-submitted-name-and-address-country")
+						select(name="country", class="form-select required", id="edit-submitted-name-and-address-country", required)
 							each val in countries
 								option(value={val}.val)= val
 					p

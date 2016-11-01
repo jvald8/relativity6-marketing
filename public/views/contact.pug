@@ -46,17 +46,17 @@ html(lang="en")
         form(action='/contact', name='contactus', id='contactus', method='post')
           fieldset
             p
-              label(for='name')= "Name:"
+              label(for='name')= "*Name:"
               br
-              input(name='name', type='text', value='', id='name')
+              input(name='name', type='text', value='', id='name', required)
             p
-              label(for='email')= "Email:"
+              label(for='email')= "*Email:"
               br
-              input(name='email', type='text', value='', id='email')
+              input(name='email', type='text', value='', id='email', required)
             p
-              label(for='message')= "Message:"
+              label(for='message')= "*Message:"
               br
-              textarea(name='message', cols='40', rows='5', id='message')
+              textarea(name='message', cols='40', rows='5', id='message', required)
             p
               input(name='submit', type='submit', value='Send', id='submit')
       if msg
