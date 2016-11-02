@@ -102,6 +102,9 @@ app.post('/contact', function (req, res) {
   });
 });
 
+app.get('*', function(req, res){
+  res.render('404', {});
+});
 
 app.listen(port);
 console.log(`go to localhost: ${port}`);
