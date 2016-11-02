@@ -77,20 +77,21 @@ app.post('/contact', function (req, res) {
   smtpTrans = nodemailer.createTransport('SMTP', {
       service: 'Gmail',
       auth: {
-          user: "jvald8@gmail.com",
+          user: "hello@relativity6.com",
           pass: process.env.GMAIL_PW
       }
   });
   //Mail options
   mailOpts = {
       from: req.body.email, //grab form data from the request body object
-      to: 'alan@relativity6.com',
+      to: 'hello@relativity6.com',
       cc: req.body.email,
-      subject: 'Website contact form',
+      subject: 'Relativity6 Contact Form',
       text: req.body.message
   };
   smtpTrans.sendMail(mailOpts, function (error, response) {
       //Email not sent
+      if(error) {console.log(error)};
       if (error) {
           res.render('contact', { title: 'Raging Flame Laboratory - Contact', msg: 'Error occured, message not sent.', err: true, page: 'contact' })
       }
