@@ -56,4 +56,8 @@ html(lang="en", style="background-color:black;")
         p(class="case-study-results-description")= "50% increase in email open rate as compared to standard campaigns."
         p(class="case-study-results-description")= "85% increase in coaching sessions booked as compared to standard campaigns."
     div(class="case-study-image-container")
-      img(class="case-study-image" src="../assets/red-outside-sport-match-smaller-faded-topandbottom-compressed.png") 
+      img(class="case-study-image" src="../assets/red-outside-sport-match-smaller-faded-topandbottom-compressed.png")
+  script.
+    $('document').ready(function() {
+      $('.case-study-container').fadeIn("slow");
+    });

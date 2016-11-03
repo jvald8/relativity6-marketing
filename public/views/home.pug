@@ -84,4 +84,6 @@ html(lang="en")
 		div(class="footer-content row")
 			p(class="copyright")= "© 2016 Relativity6, Inc. All rights reserved."
 	script.
-		$('#hero-image').fadeIn(3000);
+		$('document').ready(function() {
+			$('.hero-image-container').fadeIn("slow");
+		});
