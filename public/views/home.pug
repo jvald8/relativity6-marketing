@@ -87,5 +87,7 @@ html(lang="en")
 	script.
 
 		$(function() {
-		    $("img.lazy").lazyload();
+		    $("img.lazy").lazyload({
+		    	effect: "fadeIn"
+		    });
 		});

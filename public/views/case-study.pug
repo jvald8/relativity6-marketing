@@ -59,5 +59,7 @@ html(lang="en", style="background-color:black;")
       img(class="case-study-image lazy", data-original="../assets/red-outside-sport-match-smaller-faded-topandbottom-compressed.png", src="../assets/red-outside-sport-match-smaller-faded-topandbottom-compressed.png")
   script.
     $(function() {
-        $("img.lazy").lazyload();
+        $("img.lazy").lazyload({
+          effect : "fadeIn"
+        });
     });
