@@ -8,6 +8,7 @@ html(lang="en")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		title= "Relativity6"
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", type="text/javascript")
+		script(src="jquery.lazyload.js")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
 		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", crossorigin="anonymous", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", rel="stylesheet")
 		link(href="../styles/styles.css", rel="stylesheet")
@@ -38,7 +39,7 @@ html(lang="en")
 					li
 						a(href="/demo", class="text-uppercase")= "Demo"
 	div(class="row hero-image-container")
-		img(class="img-responsive hero-image", id="hero-image", src="../assets/hero-image-compressed.png")
+		img(class="img-responsive hero-image lazy", id="hero-image", data-original="../assets/hero-image-compressed.png", src="../assets/hero-image-compressed.png")
 		h2(class="hero-headline text-uppercase")= "reactivate your lost customers"
 		h2(class="hero-headline text-uppercase hero-headline-thin")= "with artificial intelligence"
 		p(class="hero-description text-uppercase")= "Relativity6 uncovers opportunities hidden within your own database. Our automated machine learning platform predicts with above 90% accuracy when and what your customers will purchase."
@@ -84,6 +85,7 @@ html(lang="en")
 		div(class="footer-content row")
 			p(class="copyright")= "© 2016 Relativity6, Inc. All rights reserved."
 	script.
-		$('document').ready(function() {
-			$('.hero-image-container').fadeIn("slow");
+
+		$(function() {
+		    $("img.lazy").lazyload();
 		});
