@@ -1,5 +1,5 @@
 var express = require('express'),
-  //sitemap = require('express-sitemap')(),
+  sitemap = require('express-sitemap')(),
 	app = express(),
 	router = express.Router(),
 	bodyParser = require('body-parser'),
@@ -10,7 +10,7 @@ var express = require('express'),
 	countries = require('country-data').countries,
 	_ = require('lodash');
 
-//sitemap.generate(app);
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
@@ -113,6 +113,10 @@ app.get('*', function(req, res){
   res.render('404', {});
 });
 
+sitemap.generate(app);
+
 app.listen(port);
 console.log(`go to localhost: ${port}`);
+
+
 
