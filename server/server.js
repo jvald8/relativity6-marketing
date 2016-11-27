@@ -1,5 +1,5 @@
 var express = require('express'),
-  sitemap = require('express-sitemap')(),
+  //sitemap = require('express-sitemap')(),
 	app = express(),
 	router = express.Router(),
 	bodyParser = require('body-parser'),
@@ -10,7 +10,7 @@ var express = require('express'),
 	countries = require('country-data').countries,
 	_ = require('lodash');
 
-sitemap.generate(app);
+//sitemap.generate(app);
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
