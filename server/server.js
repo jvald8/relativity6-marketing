@@ -1,4 +1,5 @@
 var express = require('express'),
+  sitemap = require('express-sitemap')(),
 	app = express(),
 	router = express.Router(),
 	bodyParser = require('body-parser'),
@@ -7,8 +8,7 @@ var express = require('express'),
 	_ = require('lodash'),
 	nodemailer = require('nodemailer'),
 	countries = require('country-data').countries,
-	_ = require('lodash'),
-  sitemap = require('express-sitemap')();
+	_ = require('lodash');
 
 sitemap.generate(app);
 
