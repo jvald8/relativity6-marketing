@@ -7,7 +7,10 @@ var express = require('express'),
 	_ = require('lodash'),
 	nodemailer = require('nodemailer'),
 	countries = require('country-data').countries,
-	_ = require('lodash');
+	_ = require('lodash'),
+  sitemap = require('express-sitemap')();
+
+sitemap.generate(app);
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
