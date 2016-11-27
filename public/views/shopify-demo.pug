@@ -37,44 +37,53 @@ html(lang="en")
 						a(href="/case-study", class="text-uppercase")= "Case Study"
 					li
 						a(href="/demo", class="text-uppercase")= "Demo"
+	div(class="row landing-page-hero-container")
+		div(class="col-md-6")
+			img(src="../assets/marvin_fist_bump.gif")
+		div(class="col-md-6")
+			img(src="https://cdn.shopify.com/assets2/press/brand/shopify-logo-main-small-f029fcaf14649a054509f6790ce2ce94d1f1c037b4015b4f106c5a67ab033f5b.png")
 	div(class="contact-form-container")
 		if message
 			h1(style="color:#73DC69;")= message
-		else
-			h1(class="text-uppercase")= "Thanks for your interest!"
-			h4(class="text-uppercase")= "Just kindly fill out the form below and one of our sales representatives will contact you shortly."
-			div.content(style="padding-top:10px;")
-				form(action='/demo', name='demoform', id='demoform', method='post')
-					fieldset
-						p
-							label(for='firstname')= "*First Name:"
-							br
-							input(name='firstname', type='text', value='', id='firstname', required)
-						p
-							label(for='lastname')= "*Last Name:"
-							br
-							input(name='lastname', type='text', value='', id='lastname', required)
-						p
-							label(for='email')= "*Email:"
-							br
-							input(name='email', type='email', value='', id='email', required)
-						p
-							label(for='phone')= "*Phone Number:"
-							br
-							input(name='phone', type='text', value='', id='phone', required)
-						p
-							label(for='jobtitle')= "*Job Title:"
-							br
-							input(name='jobtitle', type='text', value='', id='jobtitle', required)
-						p
-							label(for='company')= "*Company Name:"
-							br
-							input(name='company', type='text', value='', id='company', required)
-						p
-							label(for='country')= "*Country"
-							br
-							select(name="country", class="form-select required", id="edit-submitted-name-and-address-country", required)
-								each val in countries
-									option(value={val}.val)= val
-						p
-							input(name='submit', type='submit', value='Send', id='submit')
+		h1(class="text-uppercase")= "Thanks for your interest!"
+		h4(class="text-uppercase")= "Just kindly fill out the form below and one of our sales representatives will contact you shortly."
+		div.content(style="padding-top:10px;")
+			form(action='/demo', name='demoform', id='demoform', method='post')
+				fieldset
+					p
+						label(for='firstname')= "*First Name:"
+						br
+						input(name='firstname', type='text', value='', id='firstname', required)
+					p
+						label(for='lastname')= "*Last Name:"
+						br
+						input(name='lastname', type='text', value='', id='lastname', required)
+					p
+						label(for='email')= "*Email:"
+						br
+						input(name='email', type='email', value='', id='email', required)
+					p
+						label(for='phone')= "*Phone Number:"
+						br
+						input(name='phone', type='text', value='', id='phone', required)
+					p
+						label(for='jobtitle')= "*Job Title:"
+						br
+						input(name='jobtitle', type='text', value='', id='jobtitle', required)
+					p
+						label(for='company')= "*Company Name:"
+						br
+						input(name='company', type='text', value='', id='company', required)
+					p
+						label(for='country')= "*Country"
+						br
+						select(name="country", class="form-select required", id="edit-submitted-name-and-address-country", required)
+							each val in countries
+								option(value={val}.val)= val
+					p
+						input(name="page", type="hidden", id="page", value="")
+					p
+						input(name='submit', type='submit', value='Send', id='submit')
+		script.
+			var pageElement = document.getElementById('page');
+			pageElement.value = window.location.href;

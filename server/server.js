@@ -53,6 +53,10 @@ app.get('/case-study', function(req, res, next) {
 	res.render('case-study', {});
 });
 
+app.get('/shopify-demo', function(req, res, next) {
+  res.render('shopify-demo', {countries: countryNames});
+});
+
 app.get('/contact-result', function(req, res, next) {
 	res.render('contact-result', {});
 });
