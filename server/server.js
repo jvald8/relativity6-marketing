@@ -65,8 +65,10 @@ app.get('/contact-result', function(req, res, next) {
 });
 
 app.use('/blog/', function(req, res, next) {
-  res.redirect(301, req.protocol + '://' + "blog.relativity6.com" + req.path);
+  res.redirect(301, req.protocol + '://' + "blog.relativity6.com" + req.url);
   next();
+  //console.log(req.url)
+  //res.send('blog')
 });
 
 router.use(function(req, res, next) {
