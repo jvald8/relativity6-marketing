@@ -65,8 +65,7 @@ app.get('/contact-result', function(req, res, next) {
 });
 
 app.use('/blog/', function(req, res, next) {
-  res.redirect(301, req.protocol + '://' + req.headers.host.replace(/^www\./,'blog.') + req.path);
-  console.log(req)
+  res.redirect(301, req.protocol + '://' + req.headers.host.replace(/^www\./,'blog.') + req.headers.path);
   next();
 });
 
