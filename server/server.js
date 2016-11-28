@@ -64,8 +64,8 @@ app.get('/contact-result', function(req, res, next) {
 	res.render('contact-result', {});
 });
 
-app.all('/blog/', function(req, res, next) {
-  var newUrl = "http://blog.relativity6.com/blog" + req.url;
+app.use('/blog/', function(req, res, next) {
+  var newUrl = "http://blog.relativity6.com" + req.url;
   res.redirect(newUrl, 301);
   next();
 });
