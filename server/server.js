@@ -64,7 +64,7 @@ app.get('/contact-result', function(req, res, next) {
 	res.render('contact-result', {});
 });
 
-app.get('/blog/*', function(req, res, next) {
+app.get('blog/it-s-not-you-it-s-me-5-reasons-why-your-customers-don-t-compla', function(req, res, next) {
   //var newUrl = "http://blog.relativity6.com/" + "blog" + + req.url;
   //res.redirect(newUrl, 302);
   res.redirect("http://www.relativity6.com/blog/it-s-not-you-it-s-me-5-reasons-why-your-customers-don-t-compla", 302)
