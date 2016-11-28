@@ -64,6 +64,11 @@ app.get('/contact-result', function(req, res, next) {
 	res.render('contact-result', {});
 });
 
+app.use('/blog/', function(req, res, next) {
+  res.redirect(req.protocol + '://' + req.headers.host.replace(/^www\./,'blog.') + req.url,301);
+  next();
+});
+
 router.use(function(req, res, next) {
 	console.log('something is happening');
 	next();
