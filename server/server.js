@@ -65,7 +65,7 @@ app.get('/contact-result', function(req, res, next) {
 });
 
 app.use('/blog/', function(req, res, next) {
-  res.redirect(301, "http://blog.relativity6.com/blog" + req.url);
+  res.redirect("http://blog.relativity6.com/blog" + req.url, 301);
   next();
   //console.log(req.url)
   //res.send('blog')
