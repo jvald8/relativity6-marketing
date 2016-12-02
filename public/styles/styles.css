@@ -1,3 +1,9 @@
+.text-logo-nav {
+	height: 53px;
+    position: relative;
+    bottom: 9px;
+}
+
 body {
 	font-family: 'lato';
 }
