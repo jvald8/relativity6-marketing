@@ -102,7 +102,7 @@ app.post('/contact', function (req, res) {
       to: 'hello@relativity6.com',
       cc: req.body.email,
       subject: 'Relativity6 Contact Form',
-      text: req.body.message
+      text: `Relativity6 will get back to you shortly. Your message:${req.body.message}`
   };
   smtpTrans.sendMail(mailOpts, function (error, response) {
       //Email not sent
