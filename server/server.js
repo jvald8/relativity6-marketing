@@ -32,6 +32,11 @@ app.use('/api', router);
 
 // different views for different reasons
 // home view
+
+app.get('/home-dev', function(req, res, next) {
+  res.render('home-dev', {});
+});
+
 app.get('/', function(req, res, next) {
 	res.render('home', {});
 });
