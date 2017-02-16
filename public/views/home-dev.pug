@@ -752,3 +752,44 @@ html(lang='en')
       ga('send', 'pageview');
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
     link(rel='stylesheet', type='text/css', href='https://cloud.typography.com/6899874/6119952/css/fonts.css')
+    script(type='text/javascript').
+  $(document).ready(function(){
+  var slider = $('.slider1').unslider({
+  animateHeight: false,
+  arrows: false,
+  delay: 5000,
+  autoplay: false
+  });
+  $(".unslider-nav").appendTo(".case_study_nav");
+  });
+script(type='text/javascript').
+  $(document).scroll(function() {
+  if ($(window).scrollTop() > 147) {
+  $(".dynamic.navbar.navbar-default.navbar-fixed-top").addClass("fix-scroll").removeClass("top-scroll");
+  } else {
+  $(".dynamic.navbar.navbar-default.navbar-fixed-top").removeClass("fix-scroll").addClass("top-scroll");
+  }
+  });
+  $(document).ready(function(){
+  if ($(window).scrollTop() > 147) {
+  $(".dynamic.navbar.navbar-default.navbar-fixed-top").addClass("fix-scroll").removeClass("top-scroll");
+  }
+  else {
+  $(".dynamic.navbar.navbar-default.navbar-fixed-top").removeClass("fix-scroll").addClass("top-scroll");
+  }
+  });
+script.
+  window._pp = window._pp || [];
+  _pp.siteUId = "PP_TEST_9";
+  _pp.siteId = 1010;
+  (function() {
+  var ppjs = document.createElement('script');
+  ppjs.type = 'text/javascript';
+  ppjs.async = true;
+  ppjs.src = ('https:' == document.location.protocol ? 'https:' : 'http:') +
+  '//cdn.pbbl.co/r/' + _pp.siteId + '.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ppjs, s);
+  })();
+script#hs-script-loader(type='text/javascript', async='', defer='', src='//js.hs-scripts.com/2721609.js')
+
