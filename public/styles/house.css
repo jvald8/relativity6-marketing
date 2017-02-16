@@ -1,0 +1,215 @@
+.btn, button,.panel  {
+	border-radius: 0px !important;
+}
+
+.panel {
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
+	border: 0px;
+}
+
+.v-xxs {
+	height: 2px;
+	display: block;
+}
+
+.v-xs {
+	height: 5px;
+	display: block;
+}
+
+.v-sm {
+	height: 10px;
+	display: block;
+}
+	
+.v-md {
+	height: 15px;
+	display: block;
+}
+
+.v-lg {
+	height: 20px;
+	display: block;
+}
+
+.v-xl {
+	height: 30px;
+	display: block;
+}
+
+.v-xxl {
+	height: 40px;
+	display: block;
+}
+
+.h-xxs {
+	width: 2px;
+	display: inline-block;	
+}
+
+.h-xs {
+	width: 5px;
+	display: inline-block;
+}
+
+.h-sm {
+	width: 10px;
+	display: inline-block;
+}
+
+.h-md {
+	width: 15px;
+	display: inline-block;
+}
+
+.h-lg {
+	width: 20px;
+	display: inline-block;
+}
+
+.h-xl {
+	width: 30px;
+	display: inline-block;
+}
+
+.h-xxl {
+	width: 40px;
+	display: inline-block;
+}
+
+hr.trim {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.trim {
+	margin: 0px;
+	padding: 0px !important;
+}
+
+.trim-vert {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+.inline {
+	display: inline-block !important;
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left !important
+}
+
+.right {
+	text-align: right;
+}
+
+.text-normal {
+	font-weight: 200 !important;
+}
+
+.text-white {
+	color: #ffffff;
+}
+
+/* Strike */
+								
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > span.large {
+	font-size: 28px;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: #e6e6e6;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+/* text */
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+.text-success-bright {
+	color: #8fbf00;
+}
+
+.btn-success-bright { 
+  color: #FFFFFF; 
+  background-color: #8FBF00; 
+  border-color: #82AD00; 
+} 
+ 
+.btn-success-bright:hover, 
+.btn-success-bright:focus, 
+.btn-success-bright:active, 
+.btn-success-bright.active, 
+.open .dropdown-toggle.btn-success-bright { 
+  color: #FFFFFF; 
+  background-color: #82AD00; 
+  border-color: #82AD00; 
+} 
+ 
+.btn-success-bright:active, 
+.btn-success-bright.active, 
+.open .dropdown-toggle.btn-success-bright { 
+  background-image: none; 
+} 
+ 
+.btn-success-bright.disabled, 
+.btn-success-bright[disabled], 
+fieldset[disabled] .btn-success-bright, 
+.btn-success-bright.disabled:hover, 
+.btn-success-bright[disabled]:hover, 
+fieldset[disabled] .btn-success-bright:hover, 
+.btn-success-bright.disabled:focus, 
+.btn-success-bright[disabled]:focus, 
+fieldset[disabled] .btn-success-bright:focus, 
+.btn-success-bright.disabled:active, 
+.btn-success-bright[disabled]:active, 
+fieldset[disabled] .btn-success-bright:active, 
+.btn-success-bright.disabled.active, 
+.btn-success-bright[disabled].active, 
+fieldset[disabled] .btn-success-bright.active { 
+  background-color: #8FBF00; 
+  border-color: #82AD00; 
+} 
+ 
+.btn-success-bright .badge { 
+  color: #8FBF00; 
+  background-color: #FFFFFF; 
+}
+
+
