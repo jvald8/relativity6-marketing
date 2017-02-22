@@ -319,7 +319,7 @@ h1.subhead strong {
 }
 
 .wrap.contact {
-	background: url(/img/vv_bg.jpg) no-repeat;
+	background: url("http://pebblepost.com/img/vv_bg.jpg") no-repeat;
 	background-attachment: fixedx;
 	background-size: cover;
 	color: #fff;
