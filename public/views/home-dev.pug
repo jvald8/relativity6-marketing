@@ -582,8 +582,8 @@ html(lang='en')
             if message
               h1(style="color:#73DC69;")= message
             else
-              h1(class="text-uppercase")= "Thanks for your interest!"
-              h4(class="text-uppercase")= "Just kindly fill out the form below and one of our sales representatives will contact you shortly."
+              //-h1(class="text-uppercase")= "Thanks for your interest!"
+              //-h4(class="text-uppercase")= "Just kindly fill out the form below and one of our sales representatives will contact you shortly."
               div.content(style="padding-top:10px;")
                 form(action='/demo', name='demoform', id='demoform', method='post')
                   fieldset
