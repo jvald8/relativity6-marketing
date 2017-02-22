@@ -578,7 +578,48 @@ html(lang='en')
                 | Let&apos;s talk about your data. We&apos;ll get back to you in real time.
         .v-lg
         .row
-          .col-md-8.col-md-offset-2
+          div(class="contact-form-container")
+            if message
+              h1(style="color:#73DC69;")= message
+            else
+              h1(class="text-uppercase")= "Thanks for your interest!"
+              h4(class="text-uppercase")= "Just kindly fill out the form below and one of our sales representatives will contact you shortly."
+              div.content(style="padding-top:10px;")
+                form(action='/demo', name='demoform', id='demoform', method='post')
+                  fieldset
+                    p
+                      label(for='firstname')= "*First Name:"
+                      br
+                      input(name='firstname', type='text', value='', id='firstname', required)
+                    p
+                      label(for='lastname')= "*Last Name:"
+                      br
+                      input(name='lastname', type='text', value='', id='lastname', required)
+                    p
+                      label(for='email')= "*Email:"
+                      br
+                      input(name='email', type='email', value='', id='email', required)
+                    p
+                      label(for='phone')= "*Phone Number:"
+                      br
+                      input(name='phone', type='text', value='', id='phone', required)
+                    p
+                      label(for='jobtitle')= "*Job Title:"
+                      br
+                      input(name='jobtitle', type='text', value='', id='jobtitle', required)
+                    p
+                      label(for='company')= "*Company Name:"
+                      br
+                      input(name='company', type='text', value='', id='company', required)
+                    p
+                      label(for='country')= "*Country"
+                      br
+                      select(name="country", class="form-select required", id="edit-submitted-name-and-address-country", required)
+                        each val in countries
+                          option(value={val}.val)= val
+                    p
+                      input(name='submit', type='submit', value='Send', id='submit')
+          //-.col-md-8.col-md-offset-2
             script(charset='utf-8', type='text/javascript', src='//js.hsforms.net/forms/v2.js')
             script.
               hbspt.forms.create({
