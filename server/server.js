@@ -49,10 +49,10 @@ app.get('/', function(req, res, next) {
 	res.render('home', {});
 });
 
-app.get('/demo', function(req, res, next) {
+/*app.get('/demo', function(req, res, next) {
   //res.redirect('home-dev')
   res.render('home-dev', {countries: countryNames});
-});
+});*/
 
 app.get('/demo-thank-you', function(req, res, next) {
 	res.render('demo-thank-you', {countries: countryNames});
