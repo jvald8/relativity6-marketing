@@ -34,7 +34,7 @@ app.use('/api', router);
 // home view
 
 app.get('/home-dev', function(req, res, next) {
-  res.render('home-dev', {});
+  res.render('home-dev', {countries: countryNames});
 });
 
 app.get('/platform-dev', function(req, res, next) {
