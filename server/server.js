@@ -41,6 +41,10 @@ app.get('/platform-dev', function(req, res, next) {
   res.render('platform-dev', {});
 });
 
+app.get('/about-dev', function(req, res, next) {
+  res.render('about-dev', {});
+});
+
 app.get('/', function(req, res, next) {
 	res.render('home', {});
 });
