@@ -23,5 +23,5 @@ exports.createDemo = function(req, res) {
 	})
 
 	// if successful
-	res.render('demo', {message: "You're the best! We'll be in touch soon!", countries: ['US', 'Canada']});
+	res.render('home-dev', {message: "You're the best! We'll be in touch soon!", countries: ['US', 'Canada']});
 }
